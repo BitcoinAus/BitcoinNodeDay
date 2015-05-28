@@ -55,10 +55,10 @@
             }
         });
 
-        $.getJSON("https://getaddr.bitnodes.io/api/v1/snapshots/", function(json){
-                $("#node-count").append(json.count);
-            });
-        });
+//        $.getJSON("https://getaddr.bitnodes.io/api/v1/snapshots/", function(json){
+//                $("#node-count").append(json.count);
+//            });
+//        });
 	});
 
 })(jQuery);
