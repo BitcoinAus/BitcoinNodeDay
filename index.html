@@ -231,10 +231,9 @@
    <script src="assets/js/gmaps.js"></script>
    <script type="text/javascript" src="assets/js/custom.js"></script>
     
-        <script>
-            $.getJSON("https://getaddr.bitnodes.io/api/v1/snapshots/", function(json){
-                $("#node-count").append(json.count);
-            });
+    <script>
+        $.getJSON("https://getaddr.bitnodes.io/api/v1/snapshots/", function(json){
+            $("#node-count").append(json.count);
         });
     </script>
 </body>

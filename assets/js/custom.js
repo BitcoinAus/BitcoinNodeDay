@@ -38,27 +38,22 @@
         	));
     	});
 
-        // Google Map 
-        map = new GMaps({
-            el: '#map',
-            scrollwheel: false,
-            lat: -12.044333,
-            lng: -77.028333
-        });
-
-        map.addMarker({
-            lat: -12.044333,
-            lng: -77.028333,
-            title: 'Brisbane Node',
-            infoWindow: {
-                content: '<p><strong>Pertness</strong><br/> We are here</p>'
-            }
-        });
-
-        $.getJSON("https://getaddr.bitnodes.io/api/v1/snapshots/", function(json){
-                $("#node-count").append(json.count);
-            });
-        });
+//        // Google Map 
+//        map = new GMaps({
+//            el: '#map',
+//            scrollwheel: false,
+//            lat: -12.044333,
+//            lng: -77.028333
+//        });
+//
+//        map.addMarker({
+//            lat: -12.044333,
+//            lng: -77.028333,
+//            title: 'Brisbane Node',
+//            infoWindow: {
+//                content: '<p><strong>Pertness</strong><br/> We are here</p>'
+//            }
+//        });
 	});
 
 })(jQuery);
