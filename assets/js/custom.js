@@ -24,11 +24,12 @@
         $.backstretch([
             'assets/images/bg3.jpg', 
             'assets/images/bg2.jpg', 
-            'assets/images/bg1.jpg'
+            'assets/images/bg1.jpg',
+            'assets/images/brisibane.jpg'
         ], {duration: 3000, fade: 750});
 
         // Countdown
-		$('#countdown').countdown('2015/01/01', function(event) {	// your date here 
+		$('#countdown').countdown('2015/07/01', function(event) {	// your date here 
         	$(this).html(event.strftime(''
             	+ '<div><div>%D</div><i>Days</i></div>' 
             	+ '<div><div>%H</div><i>Hours</i></div>'
@@ -48,7 +49,7 @@
         map.addMarker({
             lat: -12.044333,
             lng: -77.028333,
-            title: 'Pertness',
+            title: 'Brisbane Node',
             infoWindow: {
                 content: '<p><strong>Pertness</strong><br/> We are here</p>'
             }
