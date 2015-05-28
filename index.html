@@ -22,8 +22,6 @@
     <link href="assets/css/animate.css" rel="stylesheet" media="screen">
     <!-- Custom styles CSS -->
     <link href="assets/css/style.css" rel="stylesheet" media="screen">
-    
-
 </head>
 <body>
 
@@ -36,9 +34,7 @@
 
    <div id="coming-soon" class="home">
       <div class="container">
-
          <div class="row">
-
             <div class="col-md-12">
                <h1>Bitcoin Node Day</h1>
                <p>Current node count <span class="largest" id="node-count"></span></p>
@@ -51,13 +47,10 @@
             <div class="col-md-12">
                <div id="countdown"></div>
             </div>
-
          </div><!-- /.row -->
-
          <div id="godown" class="scroll-down">
             <a href="#subscribe"><i class="fa fa-angle-down fa-2x"></i></a>
          </div>  
-
       </div><!-- /.container --> 
    </div><!-- /.home -->
 
@@ -76,7 +69,6 @@
                         <input type="email" class="form-control input-lg" id="email" placeholder="Enter your email">
                      </div>
                   </div>
-
                   <div class="col-md-3">
                      <button type="submit" class="btn btn-default btn-lg">Subscribe</button>
                   </div>
@@ -233,7 +225,7 @@
     
     <script>
         $.getJSON("https://getaddr.bitnodes.io/api/v1/snapshots/", function(json){
-            $("#node-count").append(json.results.total_nodes);
+            $("#node-count").append(json.results[0].total_nodes);
         });
     </script>
 </body>
