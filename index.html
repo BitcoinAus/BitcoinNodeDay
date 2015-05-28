@@ -41,7 +41,7 @@
 
             <div class="col-md-12">
                <h1>Bitcoin Node Day</h1>
-               <p><span class="largest" id="node-count"></span></p>
+               <p>Current node count <span class="largest" id="node-count"></span></p>
             </div>
 
             <div class="col-md-8 col-md-offset-2">
@@ -233,7 +233,7 @@
     
     <script>
         $.getJSON("https://getaddr.bitnodes.io/api/v1/snapshots/", function(json){
-            $("#node-count").append(json.count);
+            $("#node-count").append(json.results.total_nodes);
         });
     </script>
 </body>
