@@ -224,7 +224,7 @@
    <script type="text/javascript" src="assets/js/custom.js"></script>
     
     <script>
-        $.getJSON("https://getaddr.bitnodes.io/api/v1/snapshots/", function(json){
+        $.getJSON("https://getaddr.bitnodes.io/api/v1/snapshots/?limit=1", function(json){
             $("#node-count").append(json.results[0].total_nodes);
         });
     </script>
