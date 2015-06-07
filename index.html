@@ -55,8 +55,14 @@
       <div class="container">
          <div class="row">
          	<div class="col-md-12 title">
-               <h2>Why bitcoin node day?</h2>
-               <p>Bitcoin nodes are the back bone of the bitcoin network.  Without them the bitcoin network would not survive.  </p>
+                <h2>Why bitcoin node day?</h2>
+                <p>Bitcoin nodes are the back bone of the bitcoin network.  Without them the bitcoin network would not survive.</p>
+                <p>Full nodes perform the following functions on the network.  
+                    <ul>
+                        <li>Filtering transactions and blocks on behalf of lightweight nodes so that lightweight nodes do not need to download every transaction ever made on the network in order to find their own transactions.</li>
+                        <li>Serving historical full blocks to nodes that have been offline for a while.  Transmitting new transactions from users to miners.</li>
+                        <li>Broadcasting new blocks from miners to other nodes.</li>
+                    </ul>
             </div>
 <!--
             <div class="col-md-12">
@@ -94,9 +100,8 @@
                 </div>
             </div>
             <div class="col-md-6 services-desc">
-               <h3>What happens on bitcoin node day?</h3>
+                <h3>What happens on bitcoin node day?</h3>
                 <p>Put simple, we are asking bitcoin enthusists to install and run a <a href="https://en.bitcoin.it/wiki/Full_node">full bitcoin node</a>, such as bitcoin core for 24hrs.</p>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque nisl in accumsan faucibus. Proin et sollicitudin massa. Suspendisse sem augue, sollicitudin at tincidunt sit amet, aliquet sit amet massa.</p>
             </div>
          </div><!-- /.row -->  
       </div><!-- /.container -->
@@ -119,7 +124,7 @@
                      <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
                   </span>
                   <h3>Buy a node</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur. Vestibulum massa tortor, sodales ullamcorper ultrices et, accumsan et urna.</p>
+                  <p>You can purchase a dedicated hardware node from https://getaddr.bitnodes.io/hardware/</p>
                </div>
             </div>
 
@@ -153,6 +158,7 @@
                   </span>
                   <h3>Tip</h3>
                   <p>1NWMansXnwTJcDEm5HqZCMZzeNsVoKyvuH</p>
+                   <p>Any donations to this address will be used to "rent" a fullnode.co node.</p>
                </div>
             </div>
          </div><!-- /.row -->
@@ -163,8 +169,10 @@
       <div class="container">
          <div class="row">
             <div class="col-md-12 title">
-               <h2>More information</h2>
-               <p>http://www.reddit.com/r/Bitcoin/comments/1se3zd/how_to_create_a_full_bitcoin_node_in_a_5_ubuntu/</p>
+                <h2>More information & links</h2>
+                <p>http://www.reddit.com/r/Bitcoin/comments/1se3zd/how_to_create_a_full_bitcoin_node_in_a_5_ubuntu/</p>
+                <p>https://en.bitcoin.it/wiki/Full_node</p>
+                <p>http://fullnodes.co</p>
             </div>
          </div><!-- /.row -->
 <!--
@@ -220,8 +228,8 @@
     </div><!-- /.content -->  
 
     <!-- Javascript files -->
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script> 
     <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
     <script src="assets/js/jquery.backstretch.min.js"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
@@ -232,16 +240,6 @@
         $.getJSON("https://getaddr.bitnodes.io/api/v1/snapshots/?limit=1", function(json){
             $("#node-count").append(json.results[0].total_nodes);
         });
-    </script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-6609449-25', 'auto');
-      ga('send', 'pageview');
-
     </script>
 </body>
 </html>
