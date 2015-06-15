@@ -1,3 +1,3 @@
-# BitcoinNodeDay
+# Bitcoin Node Day
 
-Website code for www.bitcoinnodeday.com
+Website code for www.bitcoinnodeday.org
